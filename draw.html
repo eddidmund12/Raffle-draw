@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+    <title>Draw Raffle Number</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    #result {
+        font-size: 14rem;
+  font-weight: bold;
+  margin-top: -30%;
+  color: #490303;
+      
+    }
+    button {
+      font-size: 1.5rem;
+      padding: 10px 20px;
+      margin: 10px;
+    }
+  </style>
+
+</head>
+<body class="drw-body">
+  <h1 id="raffle">🎉RAFFLE DRAW🎉</h1>
+  <button class="drw-btn" onclick="drawNumber()">🎲 Draw</button>
+  <button class="rst-btn" onclick="resetDraw()">🔄 Reset</button>
+  <div id="result">–</div></br>
+  <!-- Custom Confirmation Modal -->
+<div id="confirmModal" style="display:none;" class="modal-overlay">
+    <div class="modal-box">
+      <p>Are you sure you want to reset the draw?</p>
+      <button onclick="confirmReset(true)">Yes</button>
+      <button onclick="confirmReset(false)">No</button>
+    </div>
+  </div>
+  
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="raffle.js"></script>
+
+  
+</body>
+</html>
