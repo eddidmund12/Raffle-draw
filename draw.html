@@ -3,41 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="style.css">
-    <title>Draw Raffle Number</title>
+    <title>Raffle draw</title>
   <style>
-    body {
+    body{
       font-family: sans-serif;
       text-align: center;
       padding: 50px;
     }
     #result {
-        font-size: 14rem;
+        font-size: 17rem;
   font-weight: bold;
-  margin-top: -30%;
   color: #490303;
+  opacity: 1;
       
     }
     button {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       padding: 10px 20px;
       margin: 10px;
     }
   </style>
 
 </head>
+<br></br>
+<header id="raffle">🎉RAFFLE DRAW🎉</header>
+ <img src="ubc logo-2.png" class="head-img">
+<div class="center-container">
 <body class="drw-body">
-  <h1 id="raffle">🎉RAFFLE DRAW🎉</h1>
-  <button class="drw-btn" onclick="drawNumber()">🎲 Draw</button>
-  <button class="rst-btn" onclick="resetDraw()">🔄 Reset</button>
-  <div id="result">–</div></br>
+  <!-- <h1 id="raffle">🎉RAFFLE DRAW🎉</h1> -->
+  <div class="bottom-div">
+    <button class="drw-btn" onclick="drawNumber()">🎲 Draw</button>
+    <button class="rst-btn" onclick="resetDraw()">🔄 Reset</button>
+  </div>
+  
+    <div id="result">–</div>
+  </div>
   <!-- Custom Confirmation Modal -->
 <div id="confirmModal" style="display:none;" class="modal-overlay">
     <div class="modal-box">
-      <p>Are you sure you want to reset the draw?</p>
+      <p>Reset draw and proceed to range setup page?</p>
       <button onclick="confirmReset(true)">Yes</button>
       <button onclick="confirmReset(false)">No</button>
     </div>
   </div>
+</div>
   
   
   
